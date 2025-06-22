@@ -1,0 +1,110 @@
+body { font-family: 'Segoe UI', sans-serif; }
+    .hero {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      padding: 120px 0;
+      text-align: center;
+    }
+    .feature-icon {
+      font-size: 50px;
+      color: #0dcaf0;
+    }
+    .pricing-card:hover {
+      transform: scale(1.05);
+      transition: 0.3s ease-in-out;
+    }
+    .gallery-img {
+      max-height: 300px;
+      object-fit: cover;
+    }
+     .nav-bar-1{
+      position: relative;
+      z-index: 10;
+     }
+
+    .bg-hero{
+        background-image: url("echobuds-hero.jpg");
+        background-size: cover;
+        
+        background-repeat: no-repeat;
+        
+        height:90vh;
+        
+        padding-top: 30px;
+    }
+     .bg-hero::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-color: rgba(0, 0, 0, 0.7); /* Change 0.4 to control opacity */
+          height:100vh;
+          z-index: 1;
+      }
+
+.bg-hero  .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+.features-section {
+  background-image: url('feature-bud.jpg');
+  background-size: cover;
+  height:90vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 80px 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.features-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(12, 11, 11, 0.6); /* Dim effect */
+  z-index: 0;
+}
+
+.features-section .container {
+  position: relative;
+  z-index: 8;
+}
+
+
+.caro-image{
+  height:1000px;
+  width:1200px
+}
+
+
+.test-monial-image{
+  height:150px;
+  width:150px;
+ 
+  border-radius: 50%;
+  border: 3px solid white;
+}
+.carousel-caption {
+  position: relative; /* Remove Bootstrap's absolute positioning */
+  color: white;
+}
+
+.nav-bar-fixed{
+  position: fixed;
+  top:0;
+  z-index: 1030;
+  width: 100%;
+}
+
+.cart-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.quantity-input {
+  width: 70px;
+}
